@@ -27,11 +27,10 @@ Se desarrolló una **Single Page Application (SPA)** utilizando el framework **V
 
 La aplicación cuenta con:
 
-- Múltiples componentes reutilizables (al menos dos) que estructuran la funcionalidad y presentación.
+- Componentes reutilizables que estructuran la funcionalidad y presentación.
 - Funcionalidad completa de **CRUD** (Crear, Leer, Actualizar y Eliminar) usando `localStorage` para mantener la persistencia de datos en el navegador sin necesidad de backend.
 - Consumo de una API pública (CoinCap) para obtener los precios actualizados de criptomonedas, integrando esta información para calcular el valor real de cada inversión.
 - Interfaz intuitiva que permite al usuario ingresar la cantidad de activos, visualizar los cambios y administrar su portafolio sin recargar la página.
-- Código limpio, comentado y organizado para facilitar su mantenimiento y escalabilidad.
 
 ---
 
