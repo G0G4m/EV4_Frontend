@@ -1,5 +1,5 @@
 <template>
-  <div id="app" style="max-width: 600px; margin: auto; padding: 1rem;">
+  <div id="app" style="max-width: 800px; margin: auto; padding: 1rem;">
     <h1>Portafolio de Inversiones</h1>
     <MarketPrices />
     <InvestmentForm @inversion-agregada="recargarLista" />

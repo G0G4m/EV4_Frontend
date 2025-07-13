@@ -1,7 +1,7 @@
-import { defineConfig } from "vite";
-import vue from "@vitejs/plugin-vue";
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
-  base: "/EV4_Frontend/",  // Reemplaza con el nombre de tu repo
+  base: '/EV4_Frontend/', // 👈 este valor es CLAVE
   plugins: [vue()],
-});
+})
