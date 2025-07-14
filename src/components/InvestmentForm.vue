@@ -38,7 +38,7 @@ import { ref, watch, computed } from "vue";
 
 const emit = defineEmits(["inversion-agregada"]);
 
-const API_KEY = "e5892354578ab1d40dd9062542858a0bf554c642c8d52c38935981c9f9dde323";
+const API_KEY = "30634caf98daa3e3c99e19b6f77dd24042a88cf381dd957562de642996412dda";
 
 const nombre = ref("");
 const cantidad = ref(null);
@@ -131,3 +131,9 @@ function guardarInversion() {
   emit("inversion-agregada");
 }
 </script>
+<style>
+input {
+  margin: 1em;
+  width: auto;
+}
+</style>

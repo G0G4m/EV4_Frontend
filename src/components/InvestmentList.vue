@@ -99,8 +99,17 @@ onMounted(() => {
 
 <style scoped>
 .item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
   margin-bottom: 10px;
 }
+
+.item input {
+  flex: 1 1 auto; 
+}
+
 button {
   margin-left: 10px;
   background-color: #2980b9;

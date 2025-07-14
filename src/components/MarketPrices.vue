@@ -14,7 +14,7 @@
 import { ref, onMounted, onUnmounted } from "vue";
 
 const monedas = ref([]);
-const API_KEY = '69df86df2847776b55c28269d92fab5cea4bdf1f52c6ed36aa7a403b6f426a9c';
+const API_KEY = '30634caf98daa3e3c99e19b6f77dd24042a88cf381dd957562de642996412dda';
 
 function getRandomSubarray(arr, size) {
   const shuffled = arr.slice(0);
@@ -29,7 +29,7 @@ function getRandomSubarray(arr, size) {
 
 async function cargarMonedas() {
   try {
-    const res = await fetch(`https://rest.coincap.io/v3/assets?apiKey=${API_KEY}&limit=100`, {
+    const res = await fetch(`https://rest.coincap.io/v3/assets?apiKey=${API_KEY}&limit=5`, {
       headers: { Accept: "application/json" },
     });
     if (!res.ok) throw new Error(`Error HTTP: ${res.status}`);
@@ -45,7 +45,7 @@ let intervalId = null;
 
 onMounted(() => {
   cargarMonedas();
-  intervalId = setInterval(cargarMonedas, 5000); // cada 10 segundos
+  intervalId = setInterval(cargarMonedas, 10000); // cada 10 segundos
 });
 
 onUnmounted(() => {
@@ -55,7 +55,7 @@ onUnmounted(() => {
 
 <style scoped>
 h2 {
-  color: #2c3e50;
+  color: #3c556e;
   margin-bottom: 1rem;
 }
 ul {
@@ -64,5 +64,10 @@ ul {
 }
 li {
   padding: 4px 0;
+}
+div {
+  background-color: rgb(40, 40, 40);
+  border-radius: 1em;
+  padding: 1em;
 }
 </style>
