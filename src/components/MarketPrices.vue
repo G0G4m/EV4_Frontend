@@ -14,7 +14,7 @@
 import { ref, onMounted, onUnmounted } from "vue";
 
 const monedas = ref([]);
-const API_KEY = 'e5892354578ab1d40dd9062542858a0bf554c642c8d52c38935981c9f9dde323';
+const API_KEY = '69df86df2847776b55c28269d92fab5cea4bdf1f52c6ed36aa7a403b6f426a9c';
 
 function getRandomSubarray(arr, size) {
   const shuffled = arr.slice(0);
